@@ -1,0 +1,65 @@
+<div class="stage">
+	<h3 class="pageTitle">Scale and Skew</h3>
+
+	<div class="definition">
+		<ul>
+			<li>
+				The <code>scale()</code> CSS function defines a transformation that resizes an element on the 2D plane. The function takes two arguments: the horizontal and vertical scale factors; if only 1 argument is provided, the scale is applied
+				to both axes.
+			</li>
+			<li>The <code>scale3d()</code> CSS function defines a transformation that resizes an element in 3D space.</li>
+			<li>
+				The <code>skew()</code> CSS function defines a transformation that skews an element on the 2D plane. The function takes two arguments: the horizontal and vertical skew factors; if only 1 argument is provided, the skew is applied only
+				to the X-axis.
+			</li>
+		</ul>
+	</div>
+
+	<div class="flexRow">
+		<div class="code">
+			<div class="comment">/* scale on hover */</div>
+			<div class="declaration"><span class="property">transform:</span> scale(1.2); <span class="comment">// #1</span></div>
+			<div class="declaration"><span class="property">transform:</span> scale(0.8, 1.2); <span class="comment">// #2</span></div>
+			<div class="declaration spaceBelow"><span class="property">transform:</span> scale(-1, 1); <span class="comment">// #3</span></div>
+			<div class="comment">/* skew on hover */</div>
+			<div class="declaration"><span class="property">transform:</span> skew(20deg); <span class="comment">// #4</span></div>
+			<div class="declaration"><span class="property">transform:</span> skew(20deg, 10deg); <span class="comment">// #5</span></div>
+			<div class="declaration"><span class="property">transform:</span> skew(40deg, -40deg); <span class="comment">// #6</span></div>
+		</div>
+
+		<div class="examples">
+			<div class="exampleContainer">
+				<div class="origin"></div>
+				<div class="transformed dot">1</div>
+			</div>
+			<div class="exampleContainer">
+				<div class="origin"></div>
+				<div class="transformed dot">2</div>
+			</div>
+			<div class="exampleContainer">
+				<div class="origin"></div>
+				<div class="transformed dot">3</div>
+			</div>
+			<div class="exampleContainer">
+				<div class="origin"></div>
+				<div class="transformed dot">4</div>
+			</div>
+			<div class="exampleContainer">
+				<div class="origin"></div>
+				<div class="transformed dot">5</div>
+			</div>
+			<div class="exampleContainer">
+				<div class="origin"></div>
+				<div class="transformed dot">6</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="references">
+		External references:<br />
+		<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale" target="_blank">MDN - CSS scale</a><br />
+		<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale3d" target="_blank">MDN - CSS scale3d</a><br />
+		<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew" target="_blank">MDN - CSS skew</a>
+	</div>
+</div>
+<!-- inPage navigation -->

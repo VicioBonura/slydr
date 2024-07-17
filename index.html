@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="Vincenzo Bonura" />
+		<title>CSS Presentation</title>
+		<link rel="stylesheet" href="./styles/normalize.css" />
+		<link rel="stylesheet" href="./styles/global.css" />
+		<link rel="stylesheet" href="./styles/sections.css" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="description" content="Presentation about CSS rules for gradients, shadows, transitions, transformations and animations" />
+	</head>
+
+	<body>
+		<!-- NAV -->
+		<nav>
+			<input type="checkbox" id="menuToggle" />
+			<label for="menuToggle" id="menuButton"></label>
+			<h4>CSS features</h4>
+			<ul>
+				<!-- navigation menu populated by initNav() -->
+			</ul>
+		</nav>
+
+		<div id="legend">
+			<strong>Keyboard navigation:</strong><br/>
+			<span class="key left"> </span> <span class="key down"> </span> <span class="key up"></span> <span class="key right"></span> or<br/>
+			<span class="key">h</span> <span class="key">j</span> <span class="key">k</span> <span class="key">l</span> navigate slides<br/>
+			<span class="key">i</span> toggle InPage navigation<br/>
+			<span class="key">m</span> toggle the menu<br/>
+			<span class="key">\</span> toggle this legend
+		</div>
+
+		<div id="initProgress"><div></div>LOADING</div>
+		
+		<footer></footer>
+
+		<script src="./scripts/config.js"></script>
+		<script src="./scripts/init.js"></script>
+		<script src="./scripts/main.js"></script>
+		<script src="./scripts/nav.js"></script>
+		<script src="./scripts/presentation.js"></script>
+	</body>
+</html>

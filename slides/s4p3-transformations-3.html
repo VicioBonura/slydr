@@ -1,0 +1,62 @@
+<div class="stage">
+    <h3 class="pageTitle">Perspective and 3D</h3>
+
+    <div class="definition">
+        <ul>
+            <li>The <code>perspective</code> CSS function sets the distance between the user and the z=0 plane.</li>
+            <li>The <code>perspective-origin</code> CSS property determines the position at which the viewer is looking. It is used as the vanishing point by the perspective property.</li>
+            <li>The <code>transform-style</code> CSS property sets whether children of an element are positioned in the 3D space or are flattened in the plane of the element.</li>
+        </ul>
+    </div>
+
+    <div class="flexRow">
+        <div class="code">
+            <div class="comment">/* parent */</div>
+            <div class="declaration"><span class="property">transform:</span> perspective(500px);</div>
+            <div class="declaration"><span class="property">perspective-origin:</span> center;</div>
+            <div class="declaration spaceBelow"><span class="property">transform-style:</span> preserve-3d;</div>
+            <div class="comment">/* child */</div>
+            <div class="declaration"><span class="property">transform-origin:</span> left; <span class="comment">// #1</span></div>
+            <div class="declaration"><span class="property">transform-origin:</span> center; <span class="comment">// #2</span></div>
+            <div class="declaration spaceBelow"><span class="property">transform-origin:</span> right; <span class="comment">// #3</span></div>
+            <div class="comment">/* hover (spoiler: order is important!) */</div>
+            <div class="declaration"><span class="property">transform:</span> rotateY(45deg) rotateX(15deg); <span class="comment">// #1, #2, #3</span></div>
+            <div class="declaration"><span class="property">transform:</span> rotateX(15deg) rotateY(45deg); <span class="comment">// #4, #5, #6</span></div>
+        </div>
+
+        <div class="examples">
+            <div class="exampleContainer">
+                <div class="origin"></div>
+                <div class="transformed dot left">1</div>
+            </div>
+            <div class="exampleContainer">
+                <div class="origin"></div>
+                <div class="transformed dot">2</div>
+            </div>
+            <div class="exampleContainer">
+                <div class="origin"></div>
+                <div class="transformed dot right">3</div>
+            </div>
+            <div class="exampleContainer">
+                <div class="origin"></div>
+                <div class="transformed dot left">4</div>
+            </div>
+            <div class="exampleContainer">
+                <div class="origin"></div>
+                <div class="transformed dot">5</div>
+            </div>
+            <div class="exampleContainer">
+                <div class="origin"></div>
+                <div class="transformed dot right">6</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="references">
+        External references:<br />
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/perspective" target="_blank">MDN - CSS perspective</a><br />
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style" target="_blank">MDN - CSS transform-style</a><br />
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/perspective-origin" target="_blank">MDN - CSS perspective-origin</a>
+    </div>
+</div>
+<!-- inPage navigation -->

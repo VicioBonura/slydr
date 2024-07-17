@@ -1,0 +1,52 @@
+<div class="stage">
+    <h3 class="pageTitle">Multiple box shadows</h3>
+
+    <div class="definition">
+        <code>box-shadow</code> accepts multiple effects, separated by commas, to obtain layered shadows.
+    </div>
+    
+    <div class="flexRow">
+        <div class="examples">
+            <div>Multiple shadows</div>
+        </div>
+        <div class="code">
+            <div class="comment">/* long shadow */</div>
+            <div class="declaration"><span class="property">box-shadow:</span><br/>
+                &emsp;0px &nbsp;3px &nbsp;3px &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rgba(0, 0, 0, 0.05),<br/>
+                &emsp;0px &nbsp;6px &nbsp;6px &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rgba(0, 0, 0, 0.07),<br/>
+                &emsp;0px 12px 12px &nbsp;-6px rgba(0, 0, 0, 0.1),<br/>
+                &emsp;0px 24px 24px -12px rgba(0, 0, 0, 0.3),<br/>
+                &emsp;0px 48px 48px -24px rgba(0, 0, 0, 0.5);
+            </div>
+        </div>
+
+        
+    </div>
+    
+    <div class="flexRow">
+        <div class="code">
+            <div class="comment">/* "creative" effects */</div>
+            <div class="declaration"><span class="property">box-shadow:</span><br/>
+                &emsp;&nbsp;&nbsp;0px -25px 20px hsl(&nbsp;&nbsp;0 100% 50% / 0.5),<br/>
+                &emsp;&nbsp;13px -13px 20px hsl(&nbsp;45 100% 50% / 0.5),<br/>
+                &emsp;&nbsp;25px &nbsp;&nbsp;0px 20px hsl(&nbsp;90 100% 50% / 0.5),<br/>
+                &emsp;&nbsp;13px &nbsp;13px 20px hsl(135 100% 50% / 0.5),<br/>
+                &emsp;&nbsp;&nbsp;0px &nbsp;25px 20px hsl(180 100% 50% / 0.5),<br/>
+                &emsp;-13px &nbsp;13px 20px hsl(225 100% 50% / 0.5),<br/>
+                &emsp;-25px &nbsp;&nbsp;0px 20px hsl(270 100% 50% / 0.5),<br/>
+                &emsp;-13px -13px 20px hsl(315 100% 50% / 0.5);
+            </div>
+        </div>
+
+        <div class="examples">
+            <div>Creative effects</div>
+        </div>
+    </div>
+
+    <div class="references">
+        External references:<br />
+        <a href="https://tobiasahlin.com/blog/layered-smooth-box-shadows/" target="_blank">Layered smooth box shadows - Tobias Ahlin</a><br/>
+        <a href="https://code.pieces.app/blog/user-interface-neumorphism-glassmorphism" target="_blank">User Interface Neumorphism & Glassmorphism - Pieces</a>
+    </div>
+</div>
+<!-- inPage navigation -->

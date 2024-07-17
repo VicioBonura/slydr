@@ -1,0 +1,62 @@
+<div class="stage">
+    <h3 class="pageTitle">Rotate</h3>
+
+    <div class="definition">
+        <ul>
+            <li>The <code>rotate()</code> CSS function defines a transformation that rotates an element around a fixed point on the 2D plane (z=0 plane).</li>
+            <li>The <code>rotate3d()</code> CSS function defines a transformation that rotates an element around a fixed axis in 3D space. The axis of rotation is defined by an [x, y, z] vector and pass by the origin (as defined by the transform-origin property).</li>
+        </ul>
+    </div>
+
+    <div class="flexRow">
+        <div class="code">
+            <div class="comment">/* parent */</div>
+            <div class="declaration"><span class="property">transform:</span> perspective(500px);</div>
+            <div class="declaration"><span class="property">perspective-origin:</span> center;</div>
+            <div class="declaration spaceBelow"><span class="property">transform-style:</span> preserve-3d;</div>
+            <div class="comment">/* child: hover */</div>
+            <div class="declaration"><span class="property">transform:</span> rotate(45deg); <span class="comment">// #1 - equal to rotateZ(45deg)</span></div>
+            <div class="declaration"><span class="property">transform:</span> rotateX(-1.85turn); <span class="comment">// #2</span></div>
+            <div class="declaration"><span class="property">transform:</span> rotateY(135deg); <span class="comment">// #3</span></div>
+            <div class="declaration"><span class="property">transform:</span> rotate3d(1, 1, 1, 90deg); <span class="comment">// #4</span></div>
+            <div class="declaration spaceBelow"><span class="property">transform:</span> rotateX(45deg) rotateY(65deg) rotateZ(30deg); <span class="comment">// #5</span></div>
+            <div class="declaration"><span class="property">transform:</span> rotateY(135deg); <span class="comment">// #6</span></div>
+            <div class="declaration"><span class="property">backface-visibility:</span> hidden; <span class="comment">// #6</span></div>
+        </div>
+
+        <div class="examples">
+            <div class="exampleContainer">
+                <div class="origin"></div>
+                <div class="transformed dot top left">1</div>
+            </div>
+            <div class="exampleContainer">
+                <div class="origin"></div>
+                <div class="transformed dot top">2</div>
+            </div>
+            <div class="exampleContainer">
+                <div class="origin"></div>
+                <div class="transformed dot">3</div>
+            </div>
+            <div class="exampleContainer">
+                <div class="origin"></div>
+                <div class="transformed dot">4</div>
+            </div>
+            <div class="exampleContainer">
+                <div class="origin"></div>
+                <div class="transformed dot">5</div>
+            </div>
+            <div class="exampleContainer">
+                <div class="origin"></div>
+                <div class="transformed dot">6</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="references">
+        External references:<br />
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate" target="_blank">MDN - CSS rotate</a><br />
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d" target="_blank">MDN - CSS rotate3d</a><br />
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/backface-visibility" target="_blank">MDN - CSS backface-visibility</a>
+    </div>
+</div>
+<!-- inPage navigation -->

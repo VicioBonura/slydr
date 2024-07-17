@@ -1,0 +1,54 @@
+<div class="stage">
+    <h3 class="pageTitle">Transformations in action: Cube</h3>
+
+    <div class="code">
+        <div class="comment">/* cube */</div>
+        <div class="declaration"><span class="property">perspective-origin:</span> center;</div>
+        <div class="declaration"><span class="property">transform-style:</span> preserve-3d;</div>
+        <div class="declaration spaceBelow"><span class="property">transform:</span> perspective(500px);</div>
+        <div class="comment">/* faces */</div>
+        <div class="declaration"><span class="property">transform:</span> translateZ(100px); <span class="comment">// #1: front</span></div>
+        <div class="declaration"><span class="property">transform:</span> translateX(100px) rotateY(90deg); <span class="comment">// #2: right</span></div>
+        <div class="declaration"><span class="property">transform:</span> translateY(-100px) rotateX(90deg); <span class="comment">// #3: top</span></div>
+        <div class="declaration"><span class="property">transform:</span> translateY(100px) rotateX(-90deg) rotateZ(180deg); <span class="comment">// #4: bottom</span></div>
+        <div class="declaration"><span class="property">transform:</span> translateX(-100px) rotateY(-90deg); <span class="comment">// #5: left</span></div>
+        <div class="declaration"><span class="property">transform:</span> translateZ(-100px) rotateY(180deg) <span class="comment">// #6: back</span></div>
+    </div>
+    <div class="flexRow">
+        <div id="cubeContainer" class="examples perspective">
+            <div id="cube" class="face0">
+                <div class="face front">1</div>
+                <div class="face back">6</div>
+                <div class="face right">2</div>
+                <div class="face left">5</div>
+                <div class="face top">3</div>
+                <div class="face bottom">4</div>
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" name="perspective" id="togglePerspective" checked>
+            <label for="perspective">Toggle perspective</label><br/><br/>
+            <hr/><br/>
+            <input type="radio" name="cubeRotation" id="face0" value="face0">
+            <label for="face0">None</label><br/>
+            <input type="radio" name="cubeRotation" id="face1" value="face1">
+            <label for="face1">#1</label><br/>
+            <input type="radio" name="cubeRotation" id="face2" value="face2">
+            <label for="face2">#2</label><br/>
+            <input type="radio" name="cubeRotation" id="face3" value="face3">
+            <label for="face3">#3</label><br/>
+            <input type="radio" name="cubeRotation" id="face4" value="face4">
+            <label for="face4">#4</label><br/>
+            <input type="radio" name="cubeRotation" id="face5" value="face5">
+            <label for="face5">#5</label><br/>
+            <input type="radio" name="cubeRotation" id="face6" value="face6">
+            <label for="face6">#6</label><br/>
+        </div>
+    </div>
+
+    <div class="references">
+        External references:<br />
+        <a href="https://codepen.io/V17h3m/pen/RdVxZK" target="_blank">Cube by Vicio Bonura - Codepen</a>
+    </div>
+</div>
+<!-- inPage navigation -->

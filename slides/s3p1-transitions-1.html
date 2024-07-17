@@ -1,0 +1,48 @@
+<div class="stage">
+    <h3 class="pageTitle">Transitions: definition</h3>
+
+    <div class="definition">
+        Transitions define how an element change between two states. Different states may be defined using pseudo-classes like <code class="value">:hover</code> or <code class="value">:active</code> or dynamically set using JavaScript.<br/><br/>
+        The <code>transition</code> CSS property is a shorthand property for <code>transition-property</code>, <code>transition-duration</code>, <code>transition-timing-function</code>, <code>transition-delay</code>, and <code>transition-behavior</code><sup>[*]</sup>.
+    </div>
+
+    <div class="flexRow">
+        <div class="code">
+            <div class="declaration"><span class="property">height:</span> 125px;</div>
+            <div class="declaration"><span class="property">color:</span> #202020;</div>
+            <div class="declaration"><span class="property">background:</span> #f09030;</div>
+            <div class="declaration"><span class="property">border-radius:</span> 10px;</div>
+            <div class="declaration spaceBelow"><span class="property">transition:</span> all 0.5s ease-in-out 1s;</div>
+            
+            <div class="comment">/* 'transition' is the shorthand for: */</div>
+            <div class="declaration"><span class="property">transition-property:</span> all;</div>
+            <div class="declaration"><span class="property">transition-duration:</span> 0.5s;</div>
+            <div class="declaration"><span class="property">transition-timing-function:</span> ease-in-out;</div>
+            <div class="declaration"><span class="property">transition-delay:</span> 1s;</div>
+        </div>
+
+        <div class="code">
+            <div class="comment">/* hover */</div>
+            <div class="declaration"><span class="property">height:</span> 250px;</div>
+            <div class="declaration"><span class="property">color:</span> #f09030;</div>
+            <div class="declaration"><span class="property">background:</span> #202020;</div>
+            <div class="declaration"><span class="property">border-radius:</span> 50%;</div>
+        </div>
+         
+        <div class="examples">
+            <div>HOVER ME</div>
+        </div>
+    </div>
+    <div class="definition">
+        <strong>NOTE:</strong><br/>
+        The special value <code class="value">all</code>, which specifies that the transition will be applied to all properties that change as the element changes state.
+    </div>
+
+    <div class="references">
+        External references:<br />
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition" target="_blank">MDN - CSS Transitions</a><br/>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-behavior" target="_blank">MDN - transition-behavior</a><br/>
+        <a href="https://caniuse.com/?search=transition-behavior" target="_blank">[*] Can I Use - transition-behavior | limited availability</a>
+    </div>
+</div>
+<!-- inPage navigation -->

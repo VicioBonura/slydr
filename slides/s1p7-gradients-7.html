@@ -1,0 +1,37 @@
+<div class="stage">
+    <h3 class="pageTitle">Multiple gradients</h3>
+    <div class="definition">
+        You can declare multiple gradients in the same statement by separating them with commas; they will be arranged in overlapping layers. You can use the alpha channel and background properties to make each layer visible and position it.
+    </div>
+
+    <div class="flexRow">
+        <div class="code">
+            <div class="declaration spaceBelow">
+                <span class="property">background-image:</span><br/>
+                &emsp;repeating-conic-gradient(from 0deg at 80px 0,<br/>&emsp;#ffff7700 0deg, #ffffdd33 15deg, #ffff7700 20deg),<br/>
+                &emsp;radial-gradient(#ff3333, #dd0000 24px, #dd000000 25px),<br/>
+                &emsp;radial-gradient(ellipse at center,<br/>&emsp;&emsp;#000000 0px 10px, #00000033 25px, #00000000 25px),<br/>
+                &emsp;radial-gradient(circle at 80px 0px,<br/>&emsp;&emsp;#ffff9e 20px, #ffff9e00 100px), <br/>
+                &emsp;linear-gradient(to bottom, #a5ffff, #ffffff 33%, #d0fdff 33%, #4facfe 66%, #ffd6b5 66%, #ffe7d3 100%);
+            </div>
+            <div class="declaration spaceBelow">
+                <span class="property">background-size:</span>100%, 50px 50px, 60px 15px, 100%, 100%;
+            </div>
+            <div class="declaration spaceBelow">
+                <span class="property">background-repeat:</span> no-repeat;
+            </div>
+            <div class="declaration">
+                <span class="property">background-position:</span>center, 250px 250px, 253px 290px, center, center;
+            </div>
+        </div>
+        <div class="examples">
+            <div>Example</div>
+        </div>
+    </div>
+    
+    <div class="references">
+        
+    </div>
+
+</div>
+<!-- inPage navigation -->

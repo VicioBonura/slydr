@@ -1,0 +1,62 @@
+<div class="stage">
+    <h3 class="pageTitle">Animations examples</h3>
+
+    <div class="flexRow">
+
+        <div>
+            <div class="code">
+                <div class="declaration selector">@keyframes move {</div>
+                <div class="declaration">&emsp;0% {</div>
+                <div class="declaration"><span class="property">&emsp;&emsp;left:</span> 0%;</div>
+                <div class="declaration"><span class="property">&emsp;&emsp;transform:</span> translate(-50%, -50%);</div>
+                <div class="declaration"><span class="property">&emsp;&emsp;background:</span> red;</div>
+                <div class="declaration">&emsp;} 33% {</div>
+                    <div class="declaration"><span class="property">&emsp;&emsp;left:</span> 45%;</div>
+                <div class="declaration"><span class="property">&emsp;&emsp;background:</span> yellow;</div>
+                <div class="declaration">&emsp;} 50% {</div>
+                    <div class="declaration"><span class="property">&emsp;&emsp;left:</span> 50%;</div>
+                    <div class="declaration"><span class="property">&emsp;&emsp;background:</span> green;</div>
+                    <div class="declaration">&emsp;} 66% {</div>
+                        <div class="declaration"><span class="property">&emsp;&emsp;left:</span> 55%;</div>
+                        <div class="declaration"><span class="property">&emsp;&emsp;background:</span> cyan;</div>
+                        <div class="declaration">&emsp;} 100% {</div>
+                            <div class="declaration"><span class="property">&emsp;&emsp;left:</span> 100%;</div>
+                            <div class="declaration"><span class="property">&emsp;&emsp;transform:</span> translate(-50%, 50%);</div>
+                <div class="declaration"><span class="property">&emsp;&emsp;background:</span> blue;</div>
+                <div class="declaration">&emsp;}</div>
+                <div class="declaration selector">}</div>
+            </div>
+            <p class="hint spaceAbove"><strong>NOTE:</strong> In examples #5 and #6, the transform functions of the two animations do not combine; the second one overrides the first.</p>
+        </div>
+
+        <div class="flexColumn">
+            <div class="code">
+                <div class="declaration"><span class="property">animation:</span> move 3s ease-in-out infinite paused; <span class="comment">//# 1</span></div>
+                <div class="declaration"><span class="property">animation:</span> move 3s ease-in-out infinite reverse paused; <span class="comment">//# 2</span></div>
+                <div class="declaration"><span class="property">animation:</span> move 3s ease-in-out infinite alternate paused; <span class="comment">//# 3</span></div>
+                <div class="declaration"><span class="property">animation:</span> move 3s ease-in-out infinite alternate-reverse paused; <span class="comment">//# 4</span></div>
+                <div class="declaration "><span class="property">animation:</span> move 3s ease-in-out infinite alternate paused, <span class="comment">//# 5</span></div>
+                <div class="declaration spaceBelow">&emsp;&emsp;pulse 0.5s 1s ease-in-out 10 paused;</div>
+                <div class="declaration "><span class="property">animation:</span> pulse 0.5s 1s ease-in-out 10 paused, <span class="comment">//# 6</span></div>
+                <div class="declaration spaceBelow">&emsp;&emsp;move 3s ease-in-out infinite alternate paused;</div>
+                <div class="comment">/* hover */</div>
+                <div class="declaration"><span class="property">animation-play-state:</span> running;</div>
+            </div>
+            <div class="examples">
+                <div class="animationContainer">1</div>
+                <div class="animationContainer">2</div>
+                <div class="animationContainer">3</div>
+                <div class="animationContainer">4</div>
+                <div class="animationContainer">5</div>
+                <div class="animationContainer">6</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="references">
+        External references:<br />
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations" target="_blank">MDN - Using CSS animations</a><br />
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Tips" target="_blank">MDN - Tips and tricks for CSS animations</a>
+    </div>
+</div>
+<!-- inPage navigation -->
