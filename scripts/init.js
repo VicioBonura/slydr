@@ -29,11 +29,14 @@ function initStructure(arguments) {
     const s0 = document.createElement('section');
     const a0 = document.createElement('article');
     const h1 = document.createElement('h1');
+    const subtle = document.createElement('p');
     const ul = document.createElement('ul');
     s0.id = "s0";
     a0.id = "s0p0";
     h1.classList.add('pageTitle');
+    subtle.classList.add('subtle');
     h1.textContent = arguments.title;
+    subtle.textContent = arguments.subtitle;
     let sectionCounter = 1;
     arguments.sections.forEach(section => {
         let li = document.createElement('li');
@@ -44,7 +47,7 @@ function initStructure(arguments) {
         ul.appendChild(li);
         sectionCounter++;
     });
-    a0.append(h1, ul);
+    a0.append(h1, subtle, ul);
     s0.append(a0);
     document.getElementById('legend').after(s0);
 
@@ -69,7 +72,7 @@ function initStructure(arguments) {
             let p = document.createElement('article');
             p.id = 's' + sectionCounter + 'p' + i;
             p.className = 'page';
-            p.dataset.slide = section.title.toLowerCase().replace(/\s/g, '-') + '-' + i;
+            p.dataset.slide = section.title.toLowerCase().replace(/\s/g, '') + '-' + i;
             s.appendChild(p);
         }        
 
@@ -173,7 +176,7 @@ function initMap(){
 }
 
 /**
- * Check if the current page exists
+ * Check if the requested page exists
  * @param {Number} section - The section of the application
  * @param {Number} page - The page of the section
  * @returns {Boolean} - True if the page exists, false otherwise
@@ -220,8 +223,12 @@ function updateCurrentPosition(hash){
  * @param {Array} sections - The sections of the application
  */
 function initNav(sections) {
+    const navTitle = document.querySelector('nav h4');
     const nav = document.querySelector('nav ul');
     
+    /*set the menu title*/
+    navTitle.textContent = args.title;
+
     /*create the nemu items based on the navMap*/
     for(let i = 1; i < sections.length - 1; i++){ // bypass section 0 and thanks slide
         

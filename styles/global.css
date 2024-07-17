@@ -368,6 +368,38 @@ a {
 	}
 }
 
+/* Section 0*/
+#s0 {
+	h1 {
+		margin-bottom: 1rem;
+	}
+	p {
+		font-weight: bold;
+		margin-bottom: 2rem;
+	}
+	ul {
+		list-style: none;
+		border-top: 1px solid var(--primary-color);
+		border-bottom: 1px solid var(--primary-color);
+		display: flex;
+
+		li a {
+			display: block;
+			padding: 1rem 2rem;
+			text-align: center;
+			color: var(--accent-color);
+			font-size: 1.5rem;
+		}
+		li a:hover,
+		li a:focus {
+			background-color: var(--accent-bg);
+			color: var(--primary-bg);
+			box-shadow: unset;
+			border-bottom: 2px solid var(--accent-color);
+		}
+	}
+}
+
 /* footer */
 footer {
 	position: fixed;

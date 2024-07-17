@@ -155,29 +155,6 @@ code.value {
 	font-size: 0.8rem;
 }
 
-/* Section 0*/
-#s0 ul {
-	list-style: none;
-	border-top: 1px solid var(--primary-color);
-	border-bottom: 1px solid var(--primary-color);
-	display: flex;
-
-	li a {
-		display: block;
-		padding: 1rem 2rem;
-		text-align: center;
-		color: var(--accent-color);
-		font-size: 1.5rem;
-	}
-	li a:hover,
-	li a:focus {
-		background-color: var(--accent-bg);
-		color: var(--primary-bg);
-		box-shadow: unset;
-		border-bottom: 2px solid var(--accent-color);
-	}
-}
-
 /* Section 1 */
 #s1 {
 	/* Page 1 */
