@@ -1,5 +1,7 @@
 # Slydr
 
+version 0.2.1
+
 ## Project structure
 
 ```
@@ -11,7 +13,7 @@
 │   ├── init.js
 │   ├── main.js
 │   ├── nav.js
-│   └── presentation.js 
+│   └── presentation.js
 ├── slides
 ├── styles
 │   ├── global.css

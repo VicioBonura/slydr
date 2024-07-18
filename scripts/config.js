@@ -26,6 +26,6 @@ const arguments = {
 			slides: 2,
 		},
 	],
-	defaultThanksPage: false,
+	defaultThanksPage: true,
 	customThanksPageUrl: null,
 };

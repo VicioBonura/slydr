@@ -238,7 +238,8 @@ function initNav(sections) {
 	navTitle.textContent = args.title;
 
 	/*create the nemu items based on the navMap*/
-	for (let i = 1; i < sections.length - 1; i++) {
+	let lastSection = args.defaultThanksPage === false && args.customThanksPageUrl === null ? 0 : 1; //if exists Thank Page skip last section
+	for (let i = 1; i < sections.length - lastSection; i++) {
 		// bypass section 0 and thanks slide
 
 		/*first level: main page of section*/
