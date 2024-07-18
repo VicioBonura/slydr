@@ -24,6 +24,8 @@ let disableKey = false;
  * @param {Object} arguments - the config data
  */
 function initStructure(arguments) {
+	document.title = arguments.title;
+
 	/*create the Title page*/
 	const s0 = document.createElement("section");
 	const a0 = document.createElement("article");
@@ -49,7 +51,6 @@ function initStructure(arguments) {
 		sectionCounter++;
 	});
 	a0.append(h1);
-	console.log(subtle.textContent.length);
 	if (subtle.textContent.length > 0) a0.append(subtle);
 	a0.append(ul);
 	s0.append(a0);
@@ -224,6 +225,20 @@ function updateCurrentPosition(hash) {
 	let frag = hash.slice(2);
 	navMap.current[0] = parseInt(frag.split("p")[0]);
 	navMap.current[1] = parseInt(frag.split("p")[1]);
+
+	updateDocumentTitle(hash);
+}
+
+/**
+ * Update the document title based on the current position in the navigation map
+ * @param {String} hash - The hash of the page
+ */
+function updateDocumentTitle(hash) {
+	if (navMap.current[0] > 0) {
+		let pageTitle = document.querySelector(hash + " .pageTitle").textContent;
+		let documentTitle = pageTitle + " | " + args.title;
+		document.title = documentTitle;
+	} else document.title = args.title;
 }
 
 /**
