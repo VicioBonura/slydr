@@ -29,8 +29,8 @@ function kPress(e) {
 
 	switch (e.key) {
 		case "\\": //toggle legend
-        /* fall-through */
-        case "q":
+		/* fall-through */
+		case "q":
 			document.querySelector("#legend").classList.toggle("hidden");
 			break;
 		case "i": //toggle inpage navigation
@@ -42,8 +42,8 @@ function kPress(e) {
 		case "j":
 		/* fall-through */
 		case "ArrowDown":
+			navMap.current[1] = navMap.current[0] === maxSections() ? navMap.current[1] : 0;
 			navMap.current[0] = navMap.current[0] === maxSections() ? maxSections() : navMap.current[0] + 1;
-			navMap.current[1] = 0;
 			navigateTo(navMap.current[0], navMap.current[1]);
 			break;
 		case "k":
@@ -57,8 +57,10 @@ function kPress(e) {
 		/* fall-through */
 		case "ArrowRight":
 			if (navMap.current[1] === maxPages() || navMap.current[0] === 0) {
-				navMap.current[0]++;
-				navMap.current[1] = 0;
+				if (navMap.current[0] < maxSections()) {
+					navMap.current[0]++;
+					navMap.current[1] = 0;
+				}
 			} else {
 				navMap.current[1]++;
 			}

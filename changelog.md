@@ -8,3 +8,7 @@
 ### 0.2.1
 
 -   Bug fix: resolved error in creating the navigation menu when the thanks page is missing
+
+### 0.3.0
+
+-   Add dinamic document Title
